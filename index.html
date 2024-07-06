@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Cat Diagnose</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+            <img src="images/logo.png" alt="Menu Icon" width="24px" height="24px">
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>Cat Disease Diagnosis System</h1>
+          <p>
+            Take care of your cats. <br> Deyecy any health condition or ailment that affects domestic cats.</p>
+        </div>
+        <a href="#services">Diagnose Now</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+
+        <h2>Services</h2>
+    <div class="services-content">
+    <form id="symptomForm">
+        <h3>Select Symptoms</h3>
+        <div>
+            <label><input type="checkbox" name="symptoms" value="G01"> Excessive appetite (G01)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G02"> Frequent urination (G02)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G03"> Dehydration (G03)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G04"> Rapid weight loss (G04)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G05"> Sneezing (G05)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G06"> Respiratory issues (G06)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G07"> Fever (G07)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G08"> Loss of appetite (G08)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G09"> Lethargy (G09)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G10"> Diarrhea (G10)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G11"> Vomiting (G11)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G12"> Watery eyes (G12)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G13"> Seizures (G13)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G14"> Enlarged pupils (G14)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G15"> Skin infection (G15)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G16"> Swollen lymph nodes (G16)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G17"> Skin lesions (G17)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G18"> Fatigue (G18)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G19"> Anemia (G19)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G20"> Blood in urine (G20)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G21"> Difficulty urinating (G21)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G22"> Depression (G22)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G23"> Death (G23)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G24"> Blood in diarrhea (G24)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G25"> Excessive drooling (G25)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G26"> Chewing objects (G26)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G27"> Excessive aggression (G27)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G28"> Hyperresponsive (G28)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G29"> Paralysis (G29)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G30"> Hair loss (G30)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G31"> Frequent scratching (G31)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G32"> Bumps on tail and back (G32)</label><br>
+            <label><input type="checkbox" name="symptoms" value="G33"> Bloated abdomen (G33)</label><br>
+        </div>
+        <button type="button" onclick="diagnose()">Diagnose</button>
+       
+    </form>
+   
+    <div id="result"></div>
+    </div>
+    <script src="diagnosis.js"></script>
+     
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>About US</h2>
+      <p>Take a look at some of our memorable camping adventures.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/PROFILE.png" alt="img">
+          <h3>Mountain Hiking</h3>
+          <p>Embark on an exhilarating hiking adventure in the breathtaking mountain ranges.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-2.jpg" alt="img">
+          <h3>Lakeside Camping</h3>
+          <p>Enjoy a tranquil camping experience by the serene shores of picturesque lakes.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-3.jpg" alt="img">
+          <h3>Beach Camping</h3>
+          <p>Escape to sandy beaches and camp under the starry sky by the crashing waves.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-4.jpg" alt="img">
+          <h3>Forest Exploration</h3>
+          <p>Discover the wonders of lush forests and immerse yourself in nature's beauty.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-5.jpg" alt="img">
+          <h3>RV Camping</h3>
+          <p>Experience the freedom of road trips and camping adventures with our RV rentals.</p>
+        </li>
+        <li class="card">
+          <img src="images/camping-6.jpg" alt="img">
+          <h3>Desert Camping</h3>
+          <p>Embark on a unique desert camping experience and witness stunning landscapes.</p>
+        </li>
+      </ul>
+    </section>
+
+ 
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
+            <p><i class="fas fa-envelope"></i> info@campinggearexperts.com</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+            <p><i class="fas fa-globe"></i> www.codingnepalweb.com</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">
+            <a href="#">Home</a>
+            <a href="#contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>

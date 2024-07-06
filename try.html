@@ -1,0 +1,189 @@
+
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">CDDS</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+            <img src="images/logo.png" alt="Menu Icon" width="24px" height="24px">
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>Cat Disease Diagnosis System</h1>
+          <p>
+            Take care of your cats. <br> Detect any health condition or ailment that affects domestic cats.</p>
+        </div>
+        <a href="#services">Diagnose Now</a>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Our Team Members</h2>
+      <p></p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/imran.jpeg" alt="img">
+          <h3>MUHAMAD IMRAN BIN KHASRIN</h3>
+          <p>STUDENT ID: 2022604604</p>
+        </li>
+        <li class="card">
+          <img src="images/haziq.jpeg" alt="img">
+          <h3>MUHAMMAD HAZIQ ILHAM BIN AZIZ AZHAR</h3>
+          <p>STUDENT ID: 2022675732</p>
+        </li>
+        <li class="card">
+          <img src="images/dan.png" alt="img">
+          <h3>DANIAL SYAFIQ BIN AMIR HASHIM</h3>
+          <p>STUDENT ID: 2022455262</p>
+        </li>
+        <li class="card">
+          <img src="images/hakim.jpeg" alt="img">
+          <h3>MUHAMMAD NURHAKIM BIN HASNAN</h3>
+          <p>STUDENT ID: 2022697718</p>
+        </li>
+        <li class="card">
+          <img src="images/fakhrul.jpeg" alt="img">
+          <h3>MUHAMMAD FAKHRULRADZI BIN RAZALI</h3>
+          <p>STUDENT ID: 2023637372</p>
+        </li>
+        <li class="card">
+          <img src="images/arif.jpeg" alt="img">
+          <h3>ARIF SUFFIAN BIN AZLAN</h3>
+          <p>STUDENT ID: 2023389453</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="services-content">
+            <form id="symptomForm">
+                <h3>Select Symptoms</h3>
+                <div>
+                    <select id="symptomDropdown" >
+                        <option value="" disabled selected>Select a symptom</option>
+                        <option value="G01">Excessive appetite (G01)</option>
+                        <option value="G02">Frequent urination (G02)</option>
+                        <option value="G03">Dehydration (G03)</option>
+                        <option value="G04">Rapid weight loss (G04)</option>
+                        <option value="G05">Sneezing (G05)</option>
+                        <option value="G06">Respiratory issues (G06)</option>
+                        <option value="G07">Fever (G07)</option>
+                        <option value="G08">Loss of appetite (G08)</option>
+                        <option value="G09">Lethargy (G09)</option>
+                        <option value="G10">Diarrhea (G10)</option>
+                        <option value="G11">Vomiting (G11)</option>
+                        <option value="G12">Watery eyes (G12)</option>
+                        <option value="G13">Seizures (G13)</option>
+                        <option value="G14">Enlarged pupils (G14)</option>
+                        <option value="G15">Skin infection (G15)</option>
+                        <option value="G16">Swollen lymph nodes (G16)</option>
+                        <option value="G17">Skin lesions (G17)</option>
+                        <option value="G18">Fatigue (G18)</option>
+                        <option value="G19">Anemia (G19)</option>
+                        <option value="G20">Blood in urine (G20)</option>
+                        <option value="G21">Difficulty urinating (G21)</option>
+                        <option value="G22">Depression (G22)</option>
+                        <option value="G23">Death (G23)</option>
+                        <option value="G24">Blood in diarrhea (G24)</option>
+                        <option value="G25">Excessive drooling (G25)</option>
+                        <option value="G26">Chewing objects (G26)</option>
+                        <option value="G27">Excessive aggression (G27)</option>
+                        <option value="G28">Hyperresponsive (G28)</option>
+                        <option value="G29">Paralysis (G29)</option>
+                        <option value="G30">Hair loss (G30)</option>
+                        <option value="G31">Frequent scratching (G31)</option>
+                        <option value="G32">Bumps on tail and back (G32)</option>
+                        <option value="G33">Bloated abdomen (G33)</option>
+                    </select>
+                    <button type="button" onclick="addSymptom()">Add Symptom</button>
+                </div>
+            </form>
+            <div id="selectedSymptoms">
+                <h4>Selected Symptoms:</h4>
+                <ul id="symptomList"></ul>
+            </div>
+            <button type="button" onclick="diagnose()">Diagnose</button>
+            <div id="result"></div>
+        </div>
+        <script src="try.js"></script>
+    </section>
+
+   
+ 
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i>Ken Rimba Condominium 1, Jalan Lengkuas 16/26, Seksyen 16, 40200 Shah Alam, Selangor</p>
+            <p><i class="fas fa-envelope"></i> imrankhasrin@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 019-8071707</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1460597414743!2d101.48200602480877!3d3.055558646920223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc52de7b6a99a5%3A0x5cd546efa8e48988!2sKen%20Rimba%20Condominium%201!5e0!3m2!1sen!2smy!4v1719415932375!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+    
+      <div class="faq-item">
+        <h3>What is Cat Disease Diagnosis System?</h3>
+        <p>The Cat Disease Diagnosis System helps identify common health conditions affecting cats based on symptoms provided.</p>
+      </div>
+    
+   
+    
+      <div class="faq-item">
+        <h3>Can I use this system to treat my cat?</h3>
+        <p>No, this system is intended for informational purposes only. Always consult a veterinarian for proper diagnosis and treatment.</p>
+      </div>
+    
+      <div class="faq-item">
+        <h3>How accurate is the diagnosis?</h3>
+        <p>The accuracy of diagnosis depends on the symptoms provided and the algorithm used in the system.</p>
+      </div>
+    
+    </section>
+
+    
+    
+
+    <footer>
+      <div>
+       
+      </div>
+    </footer>
+
+  </body>
+</html>
